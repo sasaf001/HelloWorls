@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(227, 233, 228);
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+
+}
+h2{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h4{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    font-size: 15px;
+    width: 631px;
+    height: auto;
+    margin-left: 15px;
+    border: none;
+    padding: 15px;
+  }
+table{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+}
+td,th{
+    border: 1px solid black;
+    text-align: left;
+    padding: 10px;
+
+}
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#country{
+    text-align: center;
+}
