@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,57 +8,69 @@
     <title>Corona identity Portal </title>
     <link rel="stylesheet" href="Style.css">
 </head>
+
 <body>
-    
-    <h1>Welcome to Corona identity Portal</h1>
-    <h2>Here you get information about number of poeple corona... </h2>
-    <div> <a href="index.html"><img src="corona.jpeg" alt="corona" width="100%" height="auto"></a></div>
+
+    <div id="menu">
+        <ul id="menuList">
+            <ol>1</ol>
+            <ol>2</ol>
+            <ol>3</ol>
+        </ul>
+    </div>
+    <div>
+        <a href="index.html"><img src="corona.jpeg" alt="corona" width="100%" height="auto"></a>
+    </div>
     <h3>About Corona</h3>
-    <p>The ongoing global pandemic of coronavirus disease 2019 (COVID-19) is caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The novel virus was identified in Wuhan, China, in December 2019; a lockdown in Wuhan and other cities in Hubei province failed to contain the outbreak, and it spread to other parts of mainland China and around the world. The World Health Organization (WHO) declared a Public Health Emergency of International Concern on 30 January 2020, and a pandemic on 11 March 2020. Since 2021, variants of the virus have emerged or become dominant in many countries, with the Delta, Alpha and Beta variants being the most virulent. As of 14 August 2021, more than 206 million cases and 4.35 million deaths have been confirmed, making it one of the deadliest pandemics in history.<br>
-    COVID-19 symptoms range from unnoticeable to life-threatening. Severe illness is more likely in elderly patients, as well as those who have certain underlying medical conditions. The disease transmits when people breathe in air contaminated by droplets and small airborne particles. The risk of breathing these in is highest when people are in close proximity, but still present over longer distances, particularly indoors. Transmission can also occur if splashed or sprayed with contaminated fluids in the eyes, nose, or mouth, and, rarely, via contaminated surfaces. People remain contagious for up to 20 days, and can spread the virus even if they do not develop any symptoms.</p>
+    <p>The ongoing global pandemic of coronavirus disease 2019 (COVID-19) is caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The novel virus was identified in Wuhan, China, in December 2019; a lockdown in Wuhan and other cities in
+        Hubei province failed to contain the outbreak, and it spread to other parts of mainland China and around the world. The World Health Organization (WHO) declared a Public Health Emergency of International Concern on 30 January 2020, and a pandemic
+        on 11 March 2020. Since 2021, variants of the virus have emerged or become dominant in many countries, with the Delta, Alpha and Beta variants being the most virulent. As of 14 August 2021, more than 206 million cases and 4.35 million deaths have
+        been confirmed, making it one of the deadliest pandemics in history.<br> COVID-19 symptoms range from unnoticeable to life-threatening. Severe illness is more likely in elderly patients, as well as those who have certain underlying medical conditions.
+        The disease transmits when people breathe in air contaminated by droplets and small airborne particles. The risk of breathing these in is highest when people are in close proximity, but still present over longer distances, particularly indoors.
+        Transmission can also occur if splashed or sprayed with contaminated fluids in the eyes, nose, or mouth, and, rarely, via contaminated surfaces. People remain contagious for up to 20 days, and can spread the virus even if they do not develop any
+        symptoms.
+    </p>
     <h3>Corona newest update </h3>
-    
-        <h4>Select the Country</h4>
     <div class="select">
-        <select name="country" id="countries"></select>
+        <select name="country" id="countries">Select Country</select>
     </div>
     </div>
-<div class="ip">
+    <div class="ip">
 
-    <button id="suchCountry">suchen</button>
-    <div class="table">
-    <table class="ip">
-        <thead>
-        <tr>
-            <th>Country</th>
-            <th>Total People</th>
-            <th>Recovered</th>
-            <th>Deaths</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr id="data" >
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        </tbody>
-    </table>
-</div>
+        <button id="suchCountry">suchen</button>
+        <div class="table">
+            <table class="ip">
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Total People</th>
+                        <th>Recovered</th>
+                        <th>Deaths</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="land"></td>
+                        <td id="leute"></td>
+                        <td id="heil"></td>
+                        <td id="tod"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-</div>
-<h4>info in Piechart</h4>
-<div></div>
-        
-<h4>News about the country</h4>
+    </div>
+    <h4>info in Piechart</h4>
+    <div></div>
+
+    <h4>News about the country</h4>
 
 
-<p id="datum"></p>
- <footer>Executed by Saeed in Project of (JS)</footer>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
- 
- <script src="index.js"></script>
+    <p id="datum"></p>
+    <footer>Executed by Saeed in Project of (JS)</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="index.js"></script>
 </body>
 
 </html>

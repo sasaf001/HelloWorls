@@ -1,83 +1,105 @@
-body{
+body {
     background-color: rgb(227, 233, 228);
     font-family: 'Times New Roman', Times, serif;
 }
-h1{
+
+h1 {
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 20px;
-
+    text-align: center;
 }
-h2{
+
+h2 {
     width: 100%;
     height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
     text-align: center;
     font-weight: bold;
 }
 
-h3{
-    font-family: 'Times New Roman', Times, serif;
-    text-align: left;
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+#menu {
+    width: 100%;
+    border: none;
 }
-h4{
+
+#menuList {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline-flex;
+    float: left;
+    border: 1px solid white;
+}
+
+h3 {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-p{
+
+h4 {
     font-family: 'Times New Roman', Times, serif;
-    text-align: left;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
-    width: 631px;
+    width: 100%;
     height: auto;
     margin-left: 15px;
     border: none;
     padding: 15px;
-  }
-table{
-    
+}
+
+table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 70%;
     height: auto;
 }
-td,th{
+
+td,
+th {
     border: 1px solid black;
     text-align: left;
     padding: 10px;
     height: 25px;
-    vertical-align:middle;
+    vertical-align: middle;
 }
-.table{
-    display:block;
+
+.table {
+    display: block;
     align-content: center;
     border-collapse: collapse;
 }
-footer{
+
+footer {
     font-family: 'Times New Roman', Times, serif;
     text-align: left;
     font-size: 14px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.select{
+
+.select {
     font-family: Arial, Helvetica, sans-serif;
-    
     margin: 20px;
-    font-size:15px;
+    font-size: 15px;
     text-align: center;
 }
-#datum{
+
+#datum {
     width: 100%;
-    height: auto;;
+    height: auto;
+    ;
     font-size: 15px;
     text-align: right;
     margin: 5px;
