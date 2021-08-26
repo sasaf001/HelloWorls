@@ -35,44 +35,45 @@
     <h3>Corona newest update </h3>
     <div class="select">
         <select name="country" id="countries">Select Country</select>
-    </div>
-    </div>
-    <div class="ip">
 
-        <button id="suchCountry">suchen</button>
-        <div class="table">
-            <table class="ip">
-                <thead>
-                    <tr>
-                        <th>Country</th>
-                        <th>Total Confirmed</th>
-                        <th>Total Recovered</th>
-                        <th>Total Deaths</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td id="land"></td>
-                        <td id="leute"></td>
-                        <td id="heil"></td>
-                        <td id="tod"></td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="ip">
+
+            <button id="suchCountry">search</button>
+            <div class="table">
+                <table class="ip">
+                    <thead>
+                        <tr>
+                            <th>Country</th>
+                            <th>Total Confirmed</th>
+                            <th>Total Recovered</th>
+                            <th>Total Deaths</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="land"></td>
+                            <td id="leute"></td>
+                            <td id="heil"></td>
+                            <td id="tod"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
 
-    </div>
-    <h4>info in Piechart</h4>
-    <div></div>
+        <div class="chart"><canvas id="myChart"></canvas></div>
+        <div></div>
 
-    <h4>News about the country</h4>
+        <h4>News about the country</h4>
 
 
-    <p id="datum"></p>
-    <footer>Executed by Saeed in Project of (JS)</footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script src="index.js"></script>
+        <p id="datum"></p>
+        <footer class="b">Executed by Saeed in Project of (JS)</footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="index.js"></script>
 </body>
 
 </html>
