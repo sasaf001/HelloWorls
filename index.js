@@ -26,49 +26,56 @@ var submitbtn = document.getElementById('suchCountry');
 submitbtn.onclick = function() {
     document.getElementById("land").innerHTML = selectland.value;
     func();
-    func1();
+    //covidnews();
+
 
 }
 
 async function func() {
+    try {
+        const api = await fetch('https://api.covid19api.com/summary');
+        const data = await api.json();
 
-    const api = await fetch('https://api.covid19api.com/summary');
-    const data = await api.json();
-    //console.log(data);
-    var y1;
-    var y2;
-    var y3;
-
-    var arr = data.Countries;
-    for (let i = 0; i < arr.length; i++) {
-        var obj = arr[i].Country;
-        var obj0 = arr[i].TotalConfirmed;
-        var obj2 = arr[i].TotalRecovered;
-        var obj3 = arr[i].TotalDeaths;
-        var obj1 = selectland.value;
-        if (obj == obj1) {
-            y1 = obj0;
-            y2 = obj2;
-            y3 = obj3;
-
-            return (document.getElementById("leute").innerHTML = y1) + (document.getElementById("heil").innerHTML = y2) +
-                (document.getElementById("tod").innerHTML = y3);
+        var arr = data.Countries;
+        for (let i = 0; i < arr.length; i++) {
+            var obj = arr[i].Country;
+            var obj0 = arr[i].TotalConfirmed;
+            var obj2 = arr[i].TotalRecovered;
+            var obj3 = arr[i].TotalDeaths;
+            var obj1 = selectland.value;
+            if (obj == obj1) {
 
 
+                (document.getElementById("leute").innerHTML = obj0) + (document.getElementById("heil").innerHTML = obj2) +
+                (document.getElementById("tod").innerHTML = obj3);
 
-        } else {
-            console.log("Error");
+                chart.data.datasets.forEach((dataset) => {
+                    dataset.data.splice(0, yValues.length);
+                    dataset.data.push(obj0, obj2, obj3);
+                });
+                chart.update();
+                break;
+
+            }
+
         }
-
-
+    } catch (err) {
+        console.log(err);
     }
 
 }
 
+/*function func1() {
+    chart.data.datasets.forEach((dataset) => {
+        dataset.data.splice(0, yValues.length);
+        dataset.data.push();
 
+    });
+    chart.update();
+}*/
 var xValues = ["TotalConfirmed", "Totalrecovered", "TotalDeaths"];
-var yValues = [1, 1, 1];
-var yValues1 = [11, 11, 10];
+var yValues = [];
+
 
 var barColors = [
     "#2b5797",
@@ -95,14 +102,17 @@ const chart = new Chart("myChart", {
     }
 });
 
-function func1() {
-    chart.data.datasets.forEach((dataset) => {
-        //dataset.data.splice(0, yValues.length);
-        dataset.data.push(yValues = y1, yValues = y2, yValues = y3);
+function covidnews() {
+    fetch('https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=8fe0eb4ed0a14b118c1e5c5e048fe449')
+        .then(response => {
+            return response.json();
+        }).then(data => {
+            console.log(data);
 
-    });
-    chart.update();
+        })
+
 }
+
 
 const tarikh = new Date();
 document.getElementById("datum").innerHTML = tarikh.toDateString();
